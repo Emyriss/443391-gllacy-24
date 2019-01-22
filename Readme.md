@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Игорь Наумов](https://up.htmlacademy.ru/htmlcss/24/user/443391).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Кравченко](https://htmlacademy.ru/profile/dreamoctober).
 
 ---
 
