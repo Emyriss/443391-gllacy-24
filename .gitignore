@@ -9,3 +9,7 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+/img/no_opt_pic/
+/img/svg/
+/.gitignore
+/.gitattributes

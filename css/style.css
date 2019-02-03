@@ -1,3 +1,13 @@
+body {
+    margin: 0 auto;
+    width: 1250px;
+    height: 2449px;
+}
+
+a {
+    text-decoration: none;
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -7,11 +17,22 @@
 }
 
 .button {
+    font-family: Roboto;
+}
+
+.main-button {
     border-radius: 20px;
     color: #ffffff;
-    font-family: Roboto;
     background-image: linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.special-button {
+
+}
+
+.form-button {
+
 }
 
 .header-button {
@@ -20,6 +41,17 @@
     border-radius: 17px;
     align-items: center;
     justify-content: center;
+}
+
+.promo-special-button {
+    display: inline-flex;
+    padding: 13px 22px 13px 22px;
+    border-radius: 22px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .page-header-search {
@@ -35,4 +67,182 @@
 .page-header-cart {
     width: 100px;
     height: 33px;
+}
+
+.banner {
+    width: 560px;
+    height: 229px;
+    border-radius: 15px;
+    background-clip: border-box;
+    background-origin: border-box;
+}
+
+.special-offer-left {
+    background: #7e020b url("../img/raspberry.jpg") no-repeat center top;
+}
+
+.special-offer-right {
+    background: #7e020b url("../img/chocolate.jpg") no-repeat center top;
+}
+
+.special-offer-header {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 41px;
+}
+
+.special-offer-header + p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.product-item {
+    list-style: none;
+}
+
+.product-item > img {
+    border-radius: 50%;
+    -webkit-clip-path: circle(20% at 50% 50%);
+    clip-path: circle(80% at 50% 50%);
+}
+
+.advantages {
+    display: flex;
+    width: 1145px;
+    height: 305px;
+    flex-flow: column;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #f9dfae url("../img/waffle.jpg") repeat-x;
+}
+
+.advantages-description-list {
+    max-width: 1115px;
+    max-height: 215px;
+}
+
+
+.advantages-description-list :before {
+    display: inline-block;
+    float: left;
+    width: 49px;
+    height: 49px;
+    padding: 5px;
+}
+
+.advantages-description-list > :nth-child(2)::before {
+    content: url("../img/icecream-icon.svg");
+}
+
+.advantages-description-list > :nth-child(3)::before {
+    content: url("../img/cow-icon.svg");
+}
+
+.advantages-description-list > :nth-child(4)::before {
+    content: url("../img/leaf-icon.svg");
+}
+
+.advantages-description-list > :nth-child(5)::before {
+    content: url("../img/thermometer-icon.svg");
+}
+
+.advantages > p {
+    margin: 30px 112px 0 22px;
+    color: #323232;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.advantages-description-list {
+    display: inline-flex;
+    margin: 0 15px;
+    padding: 0px;
+    list-style: none;
+    flex-flow: row wrap;
+    flex-direction: column;
+}
+
+.advantage-item {
+    width: 550px;
+    color: #323232;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    max-height: 100px;
+    min-height: 90px;
+}
+
+.advantage-top {
+    margin-top: 5px;
+}
+
+.advantage-bottom {
+    margin-bottom: 5px;
+}
+
+.advantage-item > p {
+    max-width: 476px;
+    max-height: 80px;
+    margin: 20px 0 0 62px;
+    overflow: hidden;
+}
+
+
+.location {
+    width: 1200px;
+    height: 430px;
+    background: #f4edc6 url("../img/address-map.jpg") no-repeat center top;
+}
+
+.cart-item {
+    list-style: none;
+}
+
+.customer-feedback {
+    width: 478px;
+    height: 443px;
+    background-color: #f8f7f4;
+    border-radius: 10px;
+}
+
+.customer-feedback-form {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    margin: 20px 25px;
+    padding: 0;
+}
+
+.customer-feedback > p {
+    display: inline-block;
+    margin: 20px 106px 5px 25px;
+}
+
+.customer-feedback input {
+    margin: 0 187px 20px 0;
+}
+
+.customer-feedback textarea {
+    margin: 0 0 25px 0;
+    border-radius: 10px;
+    resize: none;
+}
+
+.modal-close-button {
+    display: inline-block;
+    float: right;
+    padding: 0;
+    margin: 15px;
+    width: 17px;
+    height: 17px;
+}
+
+.feedback-send-button {
+    align-self: flex-end;
+    width: 139px;
+    height: 44px;
 }
