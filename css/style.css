@@ -133,19 +133,19 @@ a {
     padding: 5px;
 }
 
-.advantages-description-list > :nth-child(2)::before {
+.advantages-description-list > :nth-child(1)::before {
     content: url("../img/icecream-icon.svg");
 }
 
-.advantages-description-list > :nth-child(3)::before {
+.advantages-description-list > :nth-child(2)::before {
     content: url("../img/cow-icon.svg");
 }
 
-.advantages-description-list > :nth-child(4)::before {
+.advantages-description-list > :nth-child(3)::before {
     content: url("../img/leaf-icon.svg");
 }
 
-.advantages-description-list > :nth-child(5)::before {
+.advantages-description-list > :nth-child(4)::before {
     content: url("../img/thermometer-icon.svg");
 }
 
