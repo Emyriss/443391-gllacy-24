@@ -27,13 +27,9 @@ a {
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
-.special-button {
+.special-button {}
 
-}
-
-.form-button {
-
-}
+.form-button {}
 
 .header-button {
     display: inline-flex;
@@ -53,6 +49,97 @@ a {
     font-size: 18px;
     font-weight: 700;
 }
+
+.main-navigation-list {
+    display: inline-flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 350px;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.catalog:hover .catalog-submenu,
+.catalog:focus-within .catalog-submenu {
+  display: flex;
+}
+
+.main-navigation-item:after {
+    display: block;
+    height: 1px;
+    width: inherit;
+    margin: 0;
+    content: " ";
+    background-color: #d1d0ce;
+}
+
+.catalog-submenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 143px;
+    height: 171px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.catalog-submenu-list {
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+}
+
+.catalog-submenu-list > :nth-child(1)::after {
+    display: block;
+    margin: 5px 9px 5px 6px;
+    content: " ";
+    width: 128px;
+    height: 1px;
+    background-color: #d1d0ce;
+}
+
+.catalog-submenu-list > :nth-child(1) {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.catalog-submenu-item {
+    display: block;
+    height: 28px;
+    margin-bottom: 2px;
+    padding: 0;
+    list-style: none;
+}
+
+.catalog-submenu-item a {
+    color: #323232;
+}
+
+.catalog-submenu-item a:hover {
+    color: #323232;
+    background-color: #fbded7;
+}
+
+.catalog-submenu-item a:active {
+    color: #323232;
+    background-color: #f6b5a5;
+}
+
+.catalog-submenu-item a {
+    display: block;
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    line-height: 28px;
+}
+
 
 .page-header-search {
     width: 33px;
@@ -151,10 +238,10 @@ a {
 
 .advantages > p {
     margin: 30px 112px 0 22px;
-    color: #323232;
     font-size: 24px;
     font-weight: 500;
     line-height: 30px;
+    color: #323232;
 }
 
 .advantages-description-list {
@@ -168,12 +255,12 @@ a {
 
 .advantage-item {
     width: 550px;
-    color: #323232;
+    max-height: 100px;
+    min-height: 90px;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-    max-height: 100px;
-    min-height: 90px;
+    color: #323232;
 }
 
 .advantage-top {
@@ -205,8 +292,8 @@ a {
 .customer-feedback {
     width: 478px;
     height: 443px;
-    background-color: #f8f7f4;
     border-radius: 10px;
+    background-color: #f8f7f4;
 }
 
 .customer-feedback-form {
