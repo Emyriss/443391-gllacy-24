@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -128,7 +130,7 @@
                             </tr>
                             <tfoot>
                                 <tr>
-                                     <td colspan="5" class="cart-summary">Итого:
+                                    <td colspan="5" class="cart-summary">Итого:
                                         <span class="cart-summary-cost">750</span>
                                         <span class="cart-summary-currency" aria-label="рублей">руб.</span>
                                     </td>
@@ -161,41 +163,49 @@
             </li>
         </ul>
         <h1>Сливочное мороженное</h1>
-        <form action="#" class="product-search-filter" method="get">
+        <label for="search-sorting-type">Сортировка:</label>
+        <form action="https://echo.htmlacademy.ru" class="product-search-filter" method="get">
             <select id="search-sorting-type" class="sorting-type" name="search-sorting">
-                <option selected value="v_1">по популярности</option>
+                <option selected value="by popularity">по популярности</option>
             </select>
-            <label for="search-sorting-type">Сортировка:</label>
-            <input type="range" id="search-cost-slider" class="cost-slider" name="cost-slider" multiple min="0" step="50" max="1000" data-values="100 500">
-            <label for="search-cost-slider">Цена:
-                <span class="cost-slider-mincost">100</span>
-                <span class="cost-slider-currency">руб.</span>
-                <span class="cost-slider-dash"> &#8211; </span>
-                <span class="cost-slider-maxcost">500</span>
-                <span class="cost-slider-currency">руб.</span>
-            </label>
+
+            <fieldset class="price-range">
+                <p> Цена:
+                    <input class="price-value" type="number" name="min-price" id="min-price" min="0" max="750" value="100">
+                    <span class="cost-slider-currency">руб.</span>
+                    <input class="price-value" type="number" name="max-price" id="max-price" min="0" max="750" value="500">
+                    <span class="cost-slider-currency">руб.</span>
+                </p>
+                <div class="price-range-container">
+                    <div class="range-slider">
+                        <button class="button range-button range-button-left" type="button">Левый ползунок</button>
+                        <div class="range-slider-fill"></div>
+                        <button class="button range-button range-button-right" type="button">Правый ползунок</button>
+                    </div>
+                </div>
+            </fieldset>
             <fieldset class="fat-content-group">
                 <legend>Жирность:</legend>
-                <input type="radio" id="search-fat-content-radio_1" class="fat-content-radio" name="fat-content-radio">
+                <input type="radio" id="search-fat-content-radio_1" class="fat-content-radio" name="fat-content" value="fat-content-0%">
                 <label for="search-fat-content-radio_1">0%</label>
-                <input type="radio" id="search-fat-content-radio_2" class="fat-content-radio" name="fat-content-radio">
+                <input type="radio" id="search-fat-content-radio_2" class="fat-content-radio" name="fat-content" value="fat-content-lt-10%">
                 <label for="search-fat-content-radio_2">до 10%</label>
-                <input type="radio" id="search-fat-content-radio_3" class="fat-content-radio" name="fat-content-radio">
+                <input type="radio" id="search-fat-content-radio_3" class="fat-content-radio" name="fat-content" value="fat-content-lt-30%">
                 <label for="search-fat-content-radio_3">до 30%</label>
-                <input type="radio" id="search-fat-content-radio_4" class="fat-content-radio" name="fat-content-radio">
+                <input type="radio" id="search-fat-content-radio_4" class="fat-content-radio" name="fat-content" value="fat-content-gt-30%">
                 <label for="search-fat-content-radio_4">свыше 30%</label>
             </fieldset>
             <fieldset class="filler-group">
                 <legend>Наполнители:</legend>
-                <input type="checkbox" id="search-filler-checkbox_1" class="search-filler" name="filler-checkbox_1">
+                <input type="checkbox" id="search-filler-checkbox_1" class="search-filler" name="filler-chocolate">
                 <label for="search-filler-checkbox_1">шоколадные</label>
-                <input type="checkbox" id="search-filler-checkbox_2" class="search-filler" name="filler-checkbox_2">
+                <input type="checkbox" id="search-filler-checkbox_2" class="search-filler" name="filler-sugar-sprinkles">
                 <label for="search-filler-checkbox_2">сахарные присыпки</label>
-                <input type="checkbox" id="search-filler-checkbox_3" class="search-filler" name="filler-checkbox_3">
+                <input type="checkbox" id="search-filler-checkbox_3" class="search-filler" name="filler-fruit">
                 <label for="search-filler-checkbox_3">фрукты</label>
-                <input type="checkbox" id="search-filler-checkbox_4" class="search-filler" name="filler-checkbox_4">
+                <input type="checkbox" id="search-filler-checkbox_4" class="search-filler" name="filler-syrup">
                 <label for="search-filler-checkbox_4">сиропы</label>
-                <input type="checkbox" id="search-filler-checkbox_5" class="search-filler" name="filler-checkbox_5">
+                <input type="checkbox" id="search-filler-checkbox_5" class="search-filler" name="filler-jam">
                 <label for="search-filler-checkbox_5">джемы</label>
             </fieldset>
             <button class="button search-filter-button" type="submit">Применить</button>

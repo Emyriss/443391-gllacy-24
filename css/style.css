@@ -2,6 +2,7 @@ body {
     margin: 0 auto;
     width: 1250px;
     height: 2449px;
+    background-color: #97aca0;
 }
 
 a {
@@ -30,6 +31,78 @@ a {
 .special-button {}
 
 .form-button {}
+
+.price-value {
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -moz-appearance: textfield;
+}
+
+.price-value::-webkit-inner-spin-button,
+.price-value::-webkit-outer-spin-button,
+.price-value:hover,
+.price-value:focus{
+    -webkit-appearance: none;
+    -moz-appearance: number-input;
+    margin: 0;
+}
+
+
+.price-range-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 37px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+}
+
+.range-slider {
+    position: relative;
+    width: 176px;
+    height: 4px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: rgba(248, 247, 244, 0.50);
+}
+
+.range-button {
+    position: absolute;
+    top: -8px;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    border-radius: 50%;
+    border: 8px solid #ffffff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.range-button-left {
+    left: 15px;
+}
+
+.range-button-right {
+    right: 59px;
+}
+
+.range-slider-fill {
+    display: block;
+    position: absolute;
+    height: 4px;
+    left: 23px;
+    right: 59px;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f7f4;
+}
 
 .header-button {
     display: inline-flex;
@@ -63,7 +136,7 @@ a {
 
 .catalog:hover .catalog-submenu,
 .catalog:focus-within .catalog-submenu {
-  display: flex;
+    display: flex;
 }
 
 .main-navigation-item:after {
