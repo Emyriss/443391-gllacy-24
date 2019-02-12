@@ -45,7 +45,7 @@
                 </li>
             </ul>
             <div class="user-actions">
-                <a class="page-header-search header-button" href="#" aria-label="Поиск по сайту">
+                <a class="page-header-search button header-button" href="#" aria-label="Поиск по сайту">
                     <svg class="header-icon-magnifier" width="17px" height="17px">
                         <use xlink:href="#icon-magnifier" />
                     </svg>
@@ -58,7 +58,7 @@
                         <label for="site-search" class="visually-hidden">Поиск по сайту</label>
                     </form>
                 </section>
-                <a class="page-header-login header-button" href="#" aria-label="Вход">
+                <a class="page-header-login button header-button" href="#" aria-label="Вход">
                     <svg class="header-icon-sign-in" width="21px" height="19px">
                         <use xlink:href="#icon-signin" />
                     </svg>
@@ -71,12 +71,12 @@
                         <label for="login-customer-email" class="visually-hidden">Почтовый адрес</label>
                         <input id="login-customer-password" class="customer-password" name="customer-password" type="password">
                         <label for="login-customer-password" class="visually-hidden">Пароль</label>
-                        <button type="submit" class="button login-button">Войти</button>
-                        <a href="#" class="forgot-password">Забыли пароль?</a>
-                        <a href="#" class="new-registration">Новая регистрация</a>
+                        <button type="submit" class="button form-button login-button">Войти</button>
+                        <a href="#" class="user-login-link forgot-password">Забыли пароль?</a>
+                        <a href="#" class="user-login-link new-registration">Новая регистрация</a>
                     </form>
                 </section>
-                <a class="page-header-cart cart header-button" href="#" aria-label="Корзина покупок">
+                <a class="page-header-cart cart button header-button" href="#" aria-label="Корзина покупок">
                     <svg class="header-icon-cart" width="21px" height="20px">
                         <use xlink:href="#icon-cart" />
                     </svg>
@@ -97,8 +97,8 @@
                                 </tr>
                             </thead>
                             <tr class="cart-item">
-                                <td><button class="button button-delete" aria-label="Удалить товар">&#215;</button></td>
-                                <td><img src="#" class="cart-item-image" width="33" height="33" alt="Мороженное"></td>
+                                <td><button class="button special-button button-delete" aria-label="Удалить товар">&#215;</button></td>
+                                <td><img src="./img/orange_icecream.jpg" class="cart-item-image" width="33" height="33" alt="Мороженное"></td>
                                 <td class="cart-item-description">Пломбир с апельсиновым джемом</td>
                                 <td class="cart-item-parameter">
                                     <span class="cart-item-weight">1,5</span>
@@ -113,8 +113,8 @@
                                 </td>
                             </tr>
                             <tr class="cart-item">
-                                <td><button class="button button-delete" aria-label="Удалить позицию">&#215;</button></td>
-                                <td><img src="#" class="cart-item-image" width="33" height="33" alt="Мороженное"></td>
+                                <td><button class="button special-button button-delete" aria-label="Удалить позицию">&#215;</button></td>
+                                <td><img src="./img/strawberry_icecream.jpg" class="cart-item-image" width="33" height="33" alt="Мороженное"></td>
                                 <td class="cart-item-description">Клубничный пломбир с присыпкой из белого шоколада</td>
                                 <td class="cart-item-attribute">
                                     <span class="cart-item-weight">1,5</span>
@@ -137,7 +137,7 @@
                                 </tr>
                             </tfoot>
                         </table>
-                        <button class="button send-order" type="submit">Оформить заказ</button>
+                        <button class="button form-button send-order-button" type="submit">Оформить заказ</button>
                     </form>
                 </section>
             </div>
@@ -157,7 +157,7 @@
             <div class="slider" role="list">
                 <article class="product-promo">
                     <img id="slide_1" src="./img/slider_icecream_1-compressor.png" width="647" height="584" alt="Мороженное крем-брюле и пломбир с малиновым джемом.">
-                    <a class="button slider-button-buy" href="#">Давайте оба!</a>
+                    <a class="button active-button slider-button-buy" href="#">Давайте оба!</a>
                 </article>
                 <article class="main-product-promo">
                     <img id="slide_2" src="./img/slider_icecream_2-compressor.png" width="647" height="584" alt="Мороженное шоколадный пломбир и лимонный сорбет.">
@@ -165,7 +165,7 @@
                 </article>
                 <article class="main-product-promo">
                     <img id="slide_3" src="./img/slider_icecream_3-compressor.png" width="647" height="584" alt="Мороженное пломбир с помадкой и клубничный щербет.">
-                    <a class="button slider-button-buy" href="#">Давайте оба!</a>
+                    <a class="button active-button slider-button-buy" href="#">Давайте оба!</a>
                 </article>
             </div>
             <ul class="slider-dot-command-list">
@@ -188,12 +188,12 @@
             <article class="special-offer-left banner">
                 <h3 class="special-offer-header">Малинка даром!</h3>
                 <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варения бесплатно</p>
-                <a class="button promo-special-button" href="#">Хочу варенье!</a>
+                <a class="button active-button promo-special-button" href="#">Хочу варенье!</a>
             </article>
             <article class="special-offer-right banner">
                 <h3 class="special-offer-header">Шоколадки даром!</h3>
                 <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
-                <a class="button promo-special-button" href="#">Хочу шоколадки!</a>
+                <a class="button active-button promo-special-button" href="#">Хочу шоколадки!</a>
             </article>
         </section>
         <section class="popular-product">
@@ -205,15 +205,15 @@
                     <span class="product-item-price">310</span>
                     <span class="product-item-currency" aria-label="рублей">&#x20bd;</span>
                     <span class="product-item-weight" aria-label="килограмм">/кг</span>
-                    <a class="button fast-inspect-button" href="#">Быстрый просмотр</a>
+                    <a class="button active-button fast-inspect-button" href="#">Быстрый просмотр</a>
                 </li>
                 <li class="popular-product-item product-item">
                     <img src="./img/cofee_icecream.jpg" width="267" height="267" alt="Мороженное" aria-describedby="p2">
-                    <p id="p2" class="product-item-description" aria-label="">Сливочно-кофейное с кусочками шоколада</p>
+                    <p id="p2" class="product-item-description">Сливочно-кофейное с кусочками шоколада</p>
                     <span class="product-item-price">380</span>
                     <span class="product-item-currency" aria-label="рублей">&#x20bd;</span>
                     <span class="product-item-weight" aria-label="килограмм">/кг</span>
-                    <a class="button fast-inspect-button" href="#">Быстрый просмотр</a>
+                    <a class="button active-button fast-inspect-button" href="#">Быстрый просмотр</a>
                 </li>
                 <li class="popular-product-item product-item">
                     <img src="./img/strawberry_icecream.jpg" width="267" height="267" alt="Мороженное" aria-describedby="p3">
@@ -221,7 +221,7 @@
                     <span class="product-item-price">355</span>
                     <span class="product-item-currency" aria-label="Рублей">&#x20bd;</span>
                     <span class="product-item-weight" aria-label="килограмм">/кг</span>
-                    <a class="button fast-inspect-button" href="#">Быстрый просмотр</a>
+                    <a class="button active-button fast-inspect-button" href="#">Быстрый просмотр</a>
                 </li>
                 <li class="popular-product-item product-item">
                     <img src="./img/caramel_icecream.jpg" width="267" height="267" alt="Мороженное" aria-describedby="p4">
@@ -229,7 +229,7 @@
                     <span class="product-item-price">415</span>
                     <span class="product-item-currency" aria-label="Рублей">&#x20bd;</span>
                     <span class="product-item-weight" aria-label="килограмм">/кг</span>
-                    <a class="button fast-inspect-button" href="#">Быстрый просмотр</a>
+                    <a class="button active-button fast-inspect-button" href="#">Быстрый просмотр</a>
                 </li>
             </ul>
         </section>
@@ -263,29 +263,27 @@
                 <p class="blog-post-header">10 способов сервировки фруктовых щербетов к столу</p>
             </article>
             <section class="newsletter">
-                <h3 class="visualy-hidden">Подписка.</h3>
+                <h3 class="visually-hidden">Подписка.</h3>
                 <p>
                     Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно
                     <span class="acessibility-smile" aria-label=" . Смайлик улыбка . ">=)</span>
                 </p>
                 <form action="https://echo.htmlacademy.ru" class="newsletter-signup">
                     <input class="user-mail" type="email" name="subscriber-email" placeholder="Электронная почта">
-                    <button class="button newsletter-signup-button" type="submit">Отправить</button>
+                    <button class="button active-button form-button newsletter-signup-button" type="submit">Отправить</button>
                 </form>
             </section>
         </section>
         <section class="location">
             <h2 class="visually-hidden">Как нас найти</h2>
-            <div class="location-map-contacts">
-                <p class="location-address">
+                <p class="location-contacts">
                     Адрес главного офиса и офлайн-магазина:
                     <span class="location-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-                    <span class="accessibillity-pause visually-hidden"> . </span>
                     Для заказов по телефону:
                     <a class="location-phone" href="#" aria-label="Телефон 8-812-450-25-25">8 812 450-25-25</a>
-                    <button class="button location-feedback-button">Форма обратной связи</button>
+                    <span class="phone-call-time">(С 10 до 20 ежедневно)</span>
+                    <button class="button active-button form-button location-feedback-button">Форма обратной связи</button>
                 </p>
-            </div>
         </section>
     </main>
     <footer class="main-footer">
@@ -348,7 +346,7 @@
     <section class="modal customer-feedback">
         <h2 class="visually-hidden">Свяжитесь с нами.</h2>
         <p>Мы обязательно Вам ответим!</p>
-        <button class="button modal-close-button" aria-label="Закрыть форму">X</button>
+        <button class="button special-button modal-close-button" aria-label="Закрыть форму">X</button>
         <form action="https://echo.htmlacademy.ru" class="customer-feedback-form feedback-form" method="post">
             <input id="feedback-customer-name" class="feedback-name" name="customer-name" type="text" placeholder="Как вас зовут">
             <label class="visually-hidden" for="feedback-customer-name"></label>
@@ -356,8 +354,8 @@
             <label class="visually-hidden" for="feedback-customer-name"></label>
             <textarea id="feedback-customer-text" class="feedback-text" name="customer-comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
             <label class="visually-hidden" for="feedback-customer-text">Текст сообщения</label>
-            <button class="button feedback-send-button" type="submit">Отправить</button>
-        </form>
+            <button class="button form-button active-button feedback-send-button" type="submit">Отправить</button>
+        </form>8
     </section>
     <!--Метки для слайдера-->
     <span id="sr_i1" class="sl_cmd sr_i">&nbsp;</span>
