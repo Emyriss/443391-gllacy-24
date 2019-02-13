@@ -54,7 +54,7 @@
                 <section class="pop-up header-search">
                     <h2 class="visually-hidden">Поиск по сайту.</h2>
                     <form action="https://echo.htmlacademy.ru" class="header-search-form" method="post">
-                        <input id="site-search" type="text" class="header-search-input" name="search_request" placeholder="Что ищем ?">
+                        <input id="site-search" type="text" class="header-search-input active-input" name="search_request" placeholder="Что ищем ?">
                         <label for="site-search" class="visually-hidden">Поиск по сайту</label>
                     </form>
                 </section>
@@ -67,9 +67,9 @@
                 <section class="pop-up user-login">
                     <h2 class="visually-hidden">Вход для участников.</h2>
                     <form action="https://echo.htmlacademy.ru" class="customer-login" method="post">
-                        <input id="login-customer-email" type="text" class="login-email" name="customer-email">
+                        <input id="login-customer-email" type="text" class="login-email active-input" name="customer-email">
                         <label for="login-customer-email" class="visually-hidden">Почтовый адрес</label>
-                        <input id="login-customer-password" class="customer-password" name="customer-password" type="password">
+                        <input id="login-customer-password active-input" class="customer-password" name="customer-password" type="password">
                         <label for="login-customer-password" class="visually-hidden">Пароль</label>
                         <button type="submit" class="button form-button login-button">Войти</button>
                         <a href="#" class="user-login-link forgot-password">Забыли пароль?</a>
@@ -161,7 +161,7 @@
                 </article>
                 <article class="main-product-promo">
                     <img id="slide_2" src="./img/slider_icecream_2-compressor.png" width="647" height="584" alt="Мороженное шоколадный пломбир и лимонный сорбет.">
-                    <a class="button slider-button-buy" href="#">Давайте оба!</a>
+                    <a class="button active-button slider-button-buy" href="#">Давайте оба!</a>
                 </article>
                 <article class="main-product-promo">
                     <img id="slide_3" src="./img/slider_icecream_3-compressor.png" width="647" height="584" alt="Мороженное пломбир с помадкой и клубничный щербет.">
@@ -269,7 +269,7 @@
                     <span class="acessibility-smile" aria-label=" . Смайлик улыбка . ">=)</span>
                 </p>
                 <form action="https://echo.htmlacademy.ru" class="newsletter-signup">
-                    <input class="user-mail" type="email" name="subscriber-email" placeholder="Электронная почта">
+                    <input class="user-mail active-input" type="email" name="subscriber-email" placeholder="Электронная почта">
                     <button class="button active-button form-button newsletter-signup-button" type="submit">Отправить</button>
                 </form>
             </section>
@@ -293,7 +293,7 @@
                     <svg class="footer-icon-twitter" width="32px" height="32px">
                         <use xlink:href="#icon-twitter" />
                     </svg>
-                    Наш аккаунт в Твиттере.
+                    <span class="visually-hidden">Наш аккаунт в Твиттере.</span>
                 </a>
             </li>
             <li class="footer-social-item">
@@ -301,7 +301,7 @@
                     <svg class="footer-icon-instagram" width="32px" height="32px">
                         <use xlink:href="#icon-insta" />
                     </svg>
-                    Наша группа в Инстаграме.
+                    <span class="visually-hidden">Наша группа в Инстаграме.</span>
                 </a>
             </li>
             <li class="footer-social-item">
@@ -309,7 +309,7 @@
                     <svg class="footer-icon-facebook" width="32px" height="32px">
                         <use xlink:href="#icon-facebook" />
                     </svg>
-                    Наша группа в Фейсбуке.
+                    <span class="visually-hidden">Наша группа в Фейсбуке.</span>
                 </a>
             </li>
             <li>
@@ -317,7 +317,7 @@
                     <svg class="footer-icon-vkontakte" width="32px" height="32px">
                         <use xlink:href="#icon-vkontakte" />
                     </svg>
-                    Наша группа в ВКонтакте.
+                    <span class="visually-hidden">Наша группа в ВКонтакте.</span>
                 </a>
             </li>
         </ul>
@@ -346,11 +346,11 @@
     <section class="modal customer-feedback">
         <h2 class="visually-hidden">Свяжитесь с нами.</h2>
         <p>Мы обязательно Вам ответим!</p>
-        <button class="button special-button modal-close-button" aria-label="Закрыть форму">X</button>
+        <button class="button special-button modal-close-button" aria-label="Закрыть форму">&#215;</button>
         <form action="https://echo.htmlacademy.ru" class="customer-feedback-form feedback-form" method="post">
-            <input id="feedback-customer-name" class="feedback-name" name="customer-name" type="text" placeholder="Как вас зовут">
+            <input id="feedback-customer-name" class="feedback-name active-input" name="customer-name" type="text" placeholder="Как вас зовут">
             <label class="visually-hidden" for="feedback-customer-name"></label>
-            <input id="feedback-customer-email" class="feedback-email" name="customer-email" type="email" placeholder="Ваша почта для ответа">
+            <input id="feedback-customer-email" class="feedback-email active-input" name="customer-email" type="email" placeholder="Ваша почта для ответа">
             <label class="visually-hidden" for="feedback-customer-name"></label>
             <textarea id="feedback-customer-text" class="feedback-text" name="customer-comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
             <label class="visually-hidden" for="feedback-customer-text">Текст сообщения</label>

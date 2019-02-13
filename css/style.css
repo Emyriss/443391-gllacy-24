@@ -1,13 +1,39 @@
 body {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     width: 1250px;
     height: 2449px;
+
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+
+    /*  TODO Удалить. Бэк - временный*/
     background-color: #97aca0;
 }
 
 a {
     text-decoration: none;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/*Локальные стили*/
 
 .visually-hidden {
     position: absolute;
@@ -18,18 +44,19 @@ a {
 }
 
 .button {
-    font-family: Roboto;
+    color: #ffffff;
     border: 0;
-    text-decoration: none;
     display: inline-flex;
 }
 
 .active-button,
 .form-button {
-    color: #ffffff;
     background-color: #ffffff;
     background-image: linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
 }
 
 .active-button:hover,
@@ -47,39 +74,26 @@ a {
 }
 
 .header-button {
-    border-radius: 17px;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
+    border-radius: 17px;
 }
 
 .slider-button-buy {
     padding: 13px 41px 13px 41px;
-    border-radius: 32px;
-    color: #ffffff;
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
+    border-radius: 32px;
 }
 
 .promo-special-button {
     padding: 10px 22px 10px 22px;
     border-radius: 22px;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-}
-
-.button-delete {
-    font-size: 20px;
-    font-weight: 600;
 }
 
 .special-button {
@@ -88,14 +102,11 @@ a {
     color: inherit;
     line-height: normal;
     overflow: visible;
+    border-image-width: 0;
 }
 
 .form-button {
     border-radius: 18px/22px;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
 }
 
 .send-order-button {
@@ -117,17 +128,74 @@ a {
 
 .fast-inspect-button {
     padding: 10px 18px 10px 18px;
-    border-radius: 21px;
     color: #fefefe;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    border-radius: 21px;
 }
+
+.button-delete {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.search-filter-button {
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    border: 2px solid #ffffff;
+    opacity: 0.2;
+}
+
+.header-search {
+    padding: 15px 20px;
+}
+
+.header-search-input {
+    color: #323232;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.active-input {
+    display: inline-flex;
+    position: relative;
+    border-width: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
+}
+
+
+.active-input:hover {
+    outline-style: none;
+    box-shadow: 0 0 0 2px rgba(154, 154, 154, 0.52);
+}
+
+.active-input:hover:focus {
+    outline-style: none;
+    box-shadow: 0 0 0 2px rgba(46, 136, 228, 0.52);
+}
+
+.active-input:focus {
+    outline-style: none;
+    box-shadow: 0 0 0 2px rgba(46, 136, 228, 0.52);
+}
+
+
+.header-search-input::placeholder {
+    color: #999999;
+    font-weight: 400;
+}
+
+
 
 .price-value {
     width: 25px;
     background-color: rgba(255, 255, 255, 0);
-    border: 0;
+    border-style: none;
     margin: 0;
     padding: 0;
     -moz-appearance: textfield;
@@ -212,7 +280,6 @@ a {
 }
 
 .contact-hours {
-    color: #ffffff;
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
@@ -615,6 +682,7 @@ a {
 
 .cart-menu {
     width: 540px;
+    color: #323232;
 }
 
 .cart-item {
@@ -628,35 +696,23 @@ a {
     border-radius: 50%;
 }
 
-.cart-item-description {
-    color: #323232;
-}
-
-.cart-item-weight,
-.cart-item-unit {
-    color: #323232;
-}
-
 .cart-item-multiplied,
 .cart-item-cost,
 .cart-item-currency {
     color: #999999;
 }
 
-.cart-item-totalcost {
-    color: #323232;
-}
-
 .cart-summary {
-    color: #323232;
     font-size: 15px;
     font-weight: 700;
     line-height: 18px;
 }
 
 .customer-feedback {
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
     width: 478px;
-    height: 443px;
     border-radius: 10px;
     background-color: #f8f7f4;
 }
@@ -669,32 +725,78 @@ a {
     padding: 0;
 }
 
-.customer-feedback > p {
-    display: inline-block;
-    margin: 20px 106px 5px 25px;
+.customer-feedback p {
+    margin: 20px 40px 5px 25px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #323232;
+}
+
+.customer-feedback input::placeholder,
+.customer-feedback textarea::placeholder {
+    color: #999999;
+    font-weight: 400;
 }
 
 .customer-feedback input {
+    width: 267px;
     margin: 0 187px 20px 0;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 5px;
 }
 
 .customer-feedback textarea {
     margin: 0 0 25px 0;
+    padding-left: 15px;
+    padding-top: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
     border-radius: 10px;
     resize: none;
 }
 
 .modal-close-button {
-    display: inline-block;
-    float: right;
-    padding: 0;
-    margin: 15px;
-    width: 17px;
-    height: 17px;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    color: #323232;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 50%;
 }
 
 .feedback-send-button {
     align-self: flex-end;
     width: 139px;
     height: 44px;
+}
+
+/*Шрифты*/
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    src: url("../font/roboto.woff") format("woff"),
+        url("../font/roboto.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    src: url("../font/robotomedium.woff") format("woff"),
+        url("../font/robotomedium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    src: url("../font/robotobold.woff") format("woff"),
+        url("../font/robotobold.woff.woff2") format("woff2");
 }
